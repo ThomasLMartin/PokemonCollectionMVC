@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using PokemonCollection.Data;
 using PokemonCollection.WebMVC.Models;
 
 namespace PokemonCollection.WebMVC.Controllers
