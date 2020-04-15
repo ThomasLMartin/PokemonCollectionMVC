@@ -18,5 +18,7 @@ namespace PokemonCollection.Data
         [Required]
         public string LocationInRegion { get; set; }
 
+        public virtual ICollection<Pokemon> PokemonRegion { get; set; } = new List<Pokemon>();
+
     }
 }

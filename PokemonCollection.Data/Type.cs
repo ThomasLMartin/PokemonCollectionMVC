@@ -14,5 +14,8 @@ namespace PokemonCollection.Data
 
         [Required]
         public string TypeName { get; set; }
+
+        public virtual ICollection<Pokemon> PokemonType { get; set; } = new List<Pokemon>();
+
     }
 }

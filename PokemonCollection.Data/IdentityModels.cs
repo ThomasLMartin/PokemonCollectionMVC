@@ -33,6 +33,10 @@ namespace PokemonCollection.Data
         }
 
         public DbSet<Pokemon> Pokemon { get; set; }
+        public DbSet<Region> Region { get; set; }
+        public DbSet<Type> Type { get; set; }
+        public DbSet<Pokedex> Pokedex { get; set; }
+        public DbSet<PokedexEntry> PokedexEntry { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
