@@ -12,10 +12,10 @@ namespace PokemonCollection.Services
         private readonly ApplicationDbContext _context = new ApplicationDbContext();
 
         //Create
-        public bool CreatePokedex(PokedexCreate model)
-        {
+        //public bool CreatePokedex(PokedexCreate model)
+       // {
 
-        }
+        //};
 
     }
 }

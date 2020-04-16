@@ -63,12 +63,12 @@
       <DependentUpon>202004151642340_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Pokedex.cs" />
-    <Compile Include="PokedexEntry.cs" />
-    <Compile Include="Pokemon.cs" />
+    <Compile Include="PokemonData\Pokedex.cs" />
+    <Compile Include="PokemonData\PokedexEntry.cs" />
+    <Compile Include="PokemonData\Pokemon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Region.cs" />
-    <Compile Include="Type.cs" />
+    <Compile Include="PokemonData\Region.cs" />
+    <Compile Include="PokemonData\Type.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
