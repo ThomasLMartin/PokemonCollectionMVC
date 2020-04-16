@@ -10,6 +10,13 @@ namespace PokemonCollection.Services
 {
     public class PokemonService
     {
+        private readonly Guid _userID;
+
+        public PokemonService(Guid userId)
+        {
+            _userID = userId;
+        }
+
         private readonly ApplicationDbContext _context = new ApplicationDbContext();
 
         //Create

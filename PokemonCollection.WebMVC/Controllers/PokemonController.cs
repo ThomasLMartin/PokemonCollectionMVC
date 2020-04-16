@@ -1,4 +1,6 @@
-﻿using PokemonCollection.Models.PokemonModels;
+﻿using Microsoft.AspNet.Identity;
+using PokemonCollection.Models.PokemonModels;
+using PokemonCollection.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +15,12 @@ namespace PokemonCollection.WebMVC.Controllers
         [Authorize]
         public ActionResult Index()
         {
-            var model = new PokemonListItem[0];
-            return View();
+            //var model = new PokemonListItem[0];
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new PokemonService(userId);
+            var model = service.GetAllPokemon();
+
+            return View(model);
         }
 
         public ActionResult Create()
@@ -26,11 +32,26 @@ namespace PokemonCollection.WebMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(PokemonCreate model)
         {
-            if (ModelState.IsValid)
-            {
+            if (ModelState.IsValid) return View(model);
 
-            }
+            var service = CreatePokemonService();
+
+            if (service.CreatePokemon(model))
+            {
+                TempData["SaveResult"] = "Your Pokemon was added.";
+                return RedirectToAction("Index");
+            };
+
+            ModelState.AddModelError("", "Pokmemon could not be added.");
+
             return View(model);
+        }
+
+        private PokemonService CreatePokemonService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new PokemonService(userId);
+            return service;
         }
     }
 }
