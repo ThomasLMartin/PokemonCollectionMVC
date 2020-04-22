@@ -25,6 +25,11 @@ namespace PokemonCollection.WebMVC.Controllers
 
         public ActionResult Create()
         {
+            //bring in services to call get all regions
+            //bring in services to call get all types
+            //You'll use those variables to populate the SelectList
+            //ViewBag object assigned the value of a SelectList object that will be used to make a dropdown for existing regions in database
+            //Do the same for Type
             return View();
         }
 

@@ -1,5 +1,6 @@
 ﻿using PokemonCollection.Data;
 using PokemonCollection.Models.PokemonModels;
+using PokemonCollection.Models.RegionModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,11 @@ namespace PokemonCollection.Services
             return _context.SaveChanges() == 1;
         }
 
+        public bool CreateRegion(RegionCreate model)
+        {
+            throw new NotImplementedException();
+        }
+
         //Get ALL
         public List<PokemonListItem> GetAllPokemon()
         {
@@ -52,14 +58,14 @@ namespace PokemonCollection.Services
         //Get (Details by ID)
         public PokemonListItem GetPokemonById(int pokemonId)
         {
-            var pokemonEntitiy = _context.Pokemon.Find(pokemonId);
+            var pokemonEntity = _context.Pokemon.Find(pokemonId);
             var pokemonDetail = new PokemonListItem
             {
-                PokemonID = pokemonEntitiy.PokemonID,
-                PokemonName = pokemonEntitiy.PokemonName,
-                RegionID = pokemonEntitiy.RegionID,
-                TypeID = pokemonEntitiy.TypeID,
-                IsShiny = pokemonEntitiy.IsShiny
+                PokemonID = pokemonEntity.PokemonID,
+                PokemonName = pokemonEntity.PokemonName,
+                RegionID = pokemonEntity.RegionID,
+                TypeID = pokemonEntity.TypeID,
+                IsShiny = pokemonEntity.IsShiny
             };
             return pokemonDetail;
         }

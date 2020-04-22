@@ -61,6 +61,10 @@
     <Compile Include="PokemonModels\PokemonCreate.cs" />
     <Compile Include="PokemonModels\PokemonListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegionModels\RegionCreate.cs" />
+    <Compile Include="RegionModels\RegionListItem.cs" />
+    <Compile Include="TypeModel\TypeCreate.cs" />
+    <Compile Include="TypeModel\TypeListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

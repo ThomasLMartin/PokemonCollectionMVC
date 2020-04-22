@@ -62,6 +62,14 @@
     <Compile Include="Migrations\202004151642340_InitialMigration.designer.cs">
       <DependentUpon>202004151642340_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004171714273_UpdatedRegionData.cs" />
+    <Compile Include="Migrations\202004171714273_UpdatedRegionData.designer.cs">
+      <DependentUpon>202004171714273_UpdatedRegionData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004220153412_AddedControllerandServiceforTypeandRegion.cs" />
+    <Compile Include="Migrations\202004220153412_AddedControllerandServiceforTypeandRegion.designer.cs">
+      <DependentUpon>202004220153412_AddedControllerandServiceforTypeandRegion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PokemonData\Pokedex.cs" />
     <Compile Include="PokemonData\PokedexEntry.cs" />
@@ -77,6 +85,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202004151642340_InitialMigration.resx">
       <DependentUpon>202004151642340_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004171714273_UpdatedRegionData.resx">
+      <DependentUpon>202004171714273_UpdatedRegionData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004220153412_AddedControllerandServiceforTypeandRegion.resx">
+      <DependentUpon>202004220153412_AddedControllerandServiceforTypeandRegion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
