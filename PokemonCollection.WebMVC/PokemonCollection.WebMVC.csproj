@@ -241,11 +241,12 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Pokemon\Index.cshtml" />
     <Content Include="Views\Pokemon\Create.cshtml" />
+    <Content Include="Views\Region\Index.cshtml" />
+    <Content Include="Views\Region\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Pokedex\" />
-    <Folder Include="Views\Region\" />
     <Folder Include="Views\Type\" />
   </ItemGroup>
   <ItemGroup>

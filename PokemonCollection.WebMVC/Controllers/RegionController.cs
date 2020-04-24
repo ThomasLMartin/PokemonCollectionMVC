@@ -17,8 +17,7 @@ namespace PokemonCollection.WebMVC.Controllers
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new RegionService(userId);
             var model = service.GetAllRegions();
-
-            return View();
+            return View(model);
         }
 
         public ActionResult Create()

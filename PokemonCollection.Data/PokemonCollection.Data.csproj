@@ -70,6 +70,10 @@
     <Compile Include="Migrations\202004220153412_AddedControllerandServiceforTypeandRegion.designer.cs">
       <DependentUpon>202004220153412_AddedControllerandServiceforTypeandRegion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004242152593_adding test data.cs" />
+    <Compile Include="Migrations\202004242152593_adding test data.designer.cs">
+      <DependentUpon>202004242152593_adding test data.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PokemonData\Pokedex.cs" />
     <Compile Include="PokemonData\PokedexEntry.cs" />
@@ -91,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004220153412_AddedControllerandServiceforTypeandRegion.resx">
       <DependentUpon>202004220153412_AddedControllerandServiceforTypeandRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004242152593_adding test data.resx">
+      <DependentUpon>202004242152593_adding test data.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

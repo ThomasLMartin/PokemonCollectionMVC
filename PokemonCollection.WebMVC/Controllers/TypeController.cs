@@ -18,7 +18,7 @@ namespace PokemonCollection.WebMVC.Controllers
             var service = new TypeService(userId);
             var model = service.GetAllTypes();
 
-            return View();
+            return View(model);
         }
 
         public ActionResult Create()

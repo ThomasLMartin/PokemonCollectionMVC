@@ -36,6 +36,7 @@ namespace PokemonCollection.Services
             var regionEntities = _context.Region.ToList();
             var regionList = regionEntities.Select(r => new RegionListItem
             {
+                RegionID = r.RegionID,
                 LocationInRegion = r.LocationInRegion,
                 RegionName = r.RegionName
 
@@ -48,6 +49,7 @@ namespace PokemonCollection.Services
             var regionEntity = _context.Region.Find(regionId);
             var regionDetail = new RegionListItem
             {
+                RegionID = regionEntity.RegionID,
                 LocationInRegion = regionEntity.LocationInRegion,
                 RegionName = regionEntity.RegionName
             };
