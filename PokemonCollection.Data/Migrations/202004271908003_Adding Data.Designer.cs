@@ -7,13 +7,13 @@ namespace PokemonCollection.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class UpdatedRegionData : IMigrationMetadata
+    public sealed partial class AddingData : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdatedRegionData));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddingData));
         
         string IMigrationMetadata.Id
         {
-            get { return "202004171714273_UpdatedRegionData"; }
+            get { return "202004271908003_Adding Data"; }
         }
         
         string IMigrationMetadata.Source

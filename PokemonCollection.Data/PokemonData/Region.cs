@@ -12,10 +12,10 @@ namespace PokemonCollection.Data
         [Key]
         public int RegionID { get; set; }
 
-        //[Required]
+        [Required]
         public string RegionName { get; set; }
 
-        //[Required]
+        [Required]
         public string LocationInRegion { get; set; }
 
         public virtual ICollection<Pokemon> PokemonRegion { get; set; } = new List<Pokemon>();

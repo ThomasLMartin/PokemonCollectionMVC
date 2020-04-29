@@ -58,21 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202004151642340_InitialMigration.cs" />
-    <Compile Include="Migrations\202004151642340_InitialMigration.designer.cs">
-      <DependentUpon>202004151642340_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202004171714273_UpdatedRegionData.cs" />
-    <Compile Include="Migrations\202004171714273_UpdatedRegionData.designer.cs">
-      <DependentUpon>202004171714273_UpdatedRegionData.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202004220153412_AddedControllerandServiceforTypeandRegion.cs" />
-    <Compile Include="Migrations\202004220153412_AddedControllerandServiceforTypeandRegion.designer.cs">
-      <DependentUpon>202004220153412_AddedControllerandServiceforTypeandRegion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202004242152593_adding test data.cs" />
-    <Compile Include="Migrations\202004242152593_adding test data.designer.cs">
-      <DependentUpon>202004242152593_adding test data.cs</DependentUpon>
+    <Compile Include="Migrations\202004271908003_Adding Data.cs" />
+    <Compile Include="Migrations\202004271908003_Adding Data.designer.cs">
+      <DependentUpon>202004271908003_Adding Data.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PokemonData\Pokedex.cs" />
@@ -87,17 +75,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004151642340_InitialMigration.resx">
-      <DependentUpon>202004151642340_InitialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202004171714273_UpdatedRegionData.resx">
-      <DependentUpon>202004171714273_UpdatedRegionData.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202004220153412_AddedControllerandServiceforTypeandRegion.resx">
-      <DependentUpon>202004220153412_AddedControllerandServiceforTypeandRegion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202004242152593_adding test data.resx">
-      <DependentUpon>202004242152593_adding test data.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202004271908003_Adding Data.resx">
+      <DependentUpon>202004271908003_Adding Data.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
