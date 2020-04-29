@@ -56,7 +56,15 @@ namespace PokemonCollection.WebMVC.Controllers
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new PokemonService(userId);
-            return service;
+            return service;            
+        }
+
+        public ActionResult Details(int id)
+        {
+            var svc = CreatePokemonService();
+            var model = svc.GetPokemonById(id);
+
+            return View(model);
         }
     }
 }

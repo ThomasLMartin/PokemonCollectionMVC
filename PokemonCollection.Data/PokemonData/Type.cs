@@ -12,7 +12,7 @@ namespace PokemonCollection.Data
         [Key]
         public int TypeID { get; set; }
 
-        //[Required]
+        [Required]
         public string TypeName { get; set; }
 
         public virtual ICollection<Pokemon> PokemonType { get; set; } = new List<Pokemon>();
